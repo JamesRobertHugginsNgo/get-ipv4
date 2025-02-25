@@ -1,6 +1,6 @@
-import { createServer } from 'node:http';
+import { createServer, IncomingMessage } from 'node:http';
 
-import getIpv4 from '../dist/get-ipv4.js';
+import getIpv4 from '../dist/get-ipv4';
 
 const PORT = 3000;
 const SCHEME = 'http';
@@ -12,9 +12,9 @@ server.on('error', (error) => {
 });
 
 server.on('request', (request, response) => {
-	const body = [];
+	const body: Array<Buffer> = [];
 	request
-		.on('data', (chunk) => {
+		.on('data', (chunk: Buffer) => {
 			body.push(chunk);
 		})
 		.on('end', () => {

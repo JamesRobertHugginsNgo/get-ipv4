@@ -9,9 +9,32 @@
     "email": "jamesroberthugginsngo@gmail.com",
     "url": "https://jamesroberthugginsngo.github.io"
   },
+  "homepage": "https://github.com/JamesRobertHugginsNgo/get-ipv4#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesRobertHugginsNgo/get-ipv4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JamesRobertHugginsNgo/get-ipv4/issues"
+  },
   "type": "module",
-  "main": "index.js",
+  "main": "./src/get-ipv4.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/get-ipv4.d.ts",
+      "default": "./dist/get-ipv4.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc ./src/*.ts --outDir ./dist --declaration --moduleResolution Node --target es6 && npx prettier --write ./dist/*.[jt]s",
+    "js-sample": "node ./sample/sample.js",
+    "ts-sample": "tsx ./sample/sample.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "prettier": "^3.5.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
   }
 }

@@ -1,22 +1,20 @@
 # get-ipv4
 
-[![Static Badge](https://img.shields.io/badge/GitHub%20Repo-6e5494)](https://github.com/JamesRobertHugginsNgo/get-ipv4)
-[![Static Badge](https://img.shields.io/badge/GitHub%20Page-4078c0)](https://jamesroberthugginsngo.github.io/get-ipv4/)
-[![Static Badge](https://img.shields.io/badge/Latest_Tag-1.0.0-6cc644)](https://github.com/JamesRobertHugginsNgo/get-ipv4/tree/1.0.0)
+[![Open in Github](https://img.shields.io/badge/Open_in_GitHub-6e5494)](https://github.com/JamesRobertHugginsNgo/get-ipv4)
+[![Open in Github Page](https://img.shields.io/badge/Open_in_GitHub%20Page-4078c0)](https://jamesroberthugginsngo.github.io/get-ipv4/)
+[![Open Latest Tag](https://img.shields.io/badge/Open_Latest_Tag-1.0.0-6cc644)](https://github.com/JamesRobertHugginsNgo/get-ipv4/tree/1.0.0)
 
 NodeJS function to return ipv4 information. Useful for providing LAN IP address to a server.
 
-## Boilerplate
+## Reusable Code
 
-[script.js](src/script.js)
+- [get-ipv4.ts](./src/get-ipv4.ts) \| [raw](./src/get-ipv4.ts?raw=1)
+- [get-ipv4.js](./dist/get-ipv4.js) \| [raw](./dist/get-ipv4.js?raw=1)
 
-```
-npx github:JamesRobertHugginsNgo/get-boilerplate#5.0.0 https://github.com/JamesRobertHugginsNgo/get-ipv4/blob/1.0.0/src/script.js get-ipv4.js
-```
+## Samples
 
-## Sample
-
-- [sample.js](sample/sample.js)
+- [sample.ts](./sample/sample.ts)
+- [sample.js](./sample/sample.js)
 
 ## License
 
