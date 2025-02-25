@@ -1,4 +1,3 @@
-/* BOILERPLATE */
 import { networkInterfaces } from "node:os";
 export function getIpFamily(family) {
 	const result = [];

@@ -14,6 +14,15 @@ server.on('error', (error) => {
 server.on('request', (request, response) => {
 	const body: Array<Buffer> = [];
 	request
+		.on('error', (error) => {
+			console.error(error);
+			console.log('BODY', Buffer.concat(body).toString());
+			response.setHeader('content-type', 'text/plain');
+			response.setHeader('content-language', 'en-CA');
+			response.writeHead(500);
+			response.write('500 Internal Server Error');
+			response.end();
+		})
 		.on('data', (chunk: Buffer) => {
 			body.push(chunk);
 		})
@@ -23,15 +32,6 @@ server.on('request', (request, response) => {
 			response.setHeader('content-language', 'en-CA');
 			response.writeHead(200);
 			response.write('200 OK');
-			response.end();
-		})
-		.on('error', (error) => {
-			console.error(error);
-			console.log('BODY', Buffer.concat(body).toString());
-			response.setHeader('content-type', 'text/plain');
-			response.setHeader('content-language', 'en-CA');
-			response.writeHead(500);
-			response.write('500 Internal Server Error');
 			response.end();
 		});
 });

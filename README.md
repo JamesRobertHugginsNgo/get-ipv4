@@ -4,7 +4,7 @@
 [![Open in Github Page](https://img.shields.io/badge/Open_in_GitHub%20Page-4078c0)](https://jamesroberthugginsngo.github.io/get-ipv4/)
 [![Open Latest Tag](https://img.shields.io/badge/Open_Latest_Tag-1.0.0-6cc644)](https://github.com/JamesRobertHugginsNgo/get-ipv4/tree/1.0.0)
 
-NodeJS function to return ipv4 information. Useful for providing LAN IP address to a server.
+A NodeJS module for getting ipv4 information. Useful for providing local IP address to the server.
 
 ## Reusable Code
 
