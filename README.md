@@ -6,7 +6,7 @@
 
 A NodeJS module for getting ipv4 information. Useful for providing local IP address to the server.
 
-## Reusable Code
+## Reusable Codes
 
 Use the raw link to quickly download the raw source code.
 
