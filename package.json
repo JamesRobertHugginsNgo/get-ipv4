@@ -1,7 +1,7 @@
 {
   "name": "get-ipv4",
   "version": "2.0.0",
-  "description": "NodeJS function to return ipv4 information. Useful for providing LAN IP address to a server.",
+  "description": "A NodeJS module for getting ipv4 information. Useful for providing local IP address to the server.",
   "keywords": [],
   "license": "MIT",
   "author": {
