@@ -1,14 +1,14 @@
 import { networkInterfaces, NetworkInterfaceInfo } from 'node:os';
 
-export function getIpFamily(family): NetworkInterfaceInfo[] {
+export function getIpFamily(family: string): NetworkInterfaceInfo[] {
 	const result: NetworkInterfaceInfo[] = [];
-	const nets = networkInterfaces();
+	const nets: NodeJS.Dict<NetworkInterfaceInfo[]> = networkInterfaces();
 	for (const name in nets) {
 		if (!nets[name]) {
 			continue;
 		}
 		for (const net of nets[name]) {
-			const { family: netFamily, internal } = net;
+			const { family: netFamily, internal }: NetworkInterfaceInfo = net;
 			if (internal || netFamily !== family) {
 				continue;
 			}
