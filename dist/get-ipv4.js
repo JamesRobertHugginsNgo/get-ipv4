@@ -1,4 +1,4 @@
-import { networkInterfaces } from "node:os";
+import { networkInterfaces } from 'node:os';
 export function getIpFamily(family) {
 	const result = [];
 	const nets = networkInterfaces();
@@ -17,5 +17,5 @@ export function getIpFamily(family) {
 	return result;
 }
 export default function getIpv4() {
-	return getIpFamily("IPv4");
+	return getIpFamily('IPv4');
 }

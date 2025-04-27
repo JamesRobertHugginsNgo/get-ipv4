@@ -1,4 +1,5 @@
-import { networkInterfaces, NetworkInterfaceInfo } from 'node:os';
+import type { NetworkInterfaceInfo } from 'node:os';
+import { networkInterfaces } from 'node:os';
 
 export function getIpFamily(family: string): NetworkInterfaceInfo[] {
 	const result: NetworkInterfaceInfo[] = [];
