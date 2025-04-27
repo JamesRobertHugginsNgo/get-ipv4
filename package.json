@@ -3,12 +3,12 @@
   "version": "2.1.0",
   "description": "A NodeJS module for getting ipv4 information. Useful for providing local IP address to the server.",
   "keywords": [],
-  "license": "MIT",
   "author": {
     "name": "James Robert Huggins Ngo",
     "email": "jamesroberthugginsngo@gmail.com",
     "url": "https://jamesroberthugginsngo.github.io"
   },
+  "license": "MIT",
   "homepage": "https://github.com/JamesRobertHugginsNgo/get-ipv4#readme",
   "repository": {
     "type": "git",
@@ -26,15 +26,13 @@
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && npx prettier --write ./dist/*.[jt]s",
-    "js-sample": "node ./sample/sample.js",
-    "ts-sample": "tsx ./sample/sample.ts"
+    "build": "tsc -project ./tsconfig.json && prettier --single-quote --write ./dist/**/*.[tj]s",
+    "watch": "tsc -project ./tsconfig.json --watch",
+    "sample": "node ./sample/sample.js"
   },
   "devDependencies": {
     "@types/node": "^22.13.4",
     "prettier": "^3.5.1",
-    "tsx": "^4.19.3",
     "typescript": "^5.7.3"
   }
 }
